@@ -1,7 +1,7 @@
 import * as styles from "./index.style";
 import Image from "next/image";
 import Link from "next/link";
-import style from '../../../styles/Home.module.css';
+
 
 export default function NavBar() {
   return (

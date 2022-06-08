@@ -35,7 +35,7 @@ export const ClearFix = styled.div`
  clear: both;
 `
 
-export const Nav = styled.ul<{ active: boolean }>`
+export const Nav = styled("ul")<{ active: boolean }>`
     margin: 0;
     float: right;   
     text-align: center;
