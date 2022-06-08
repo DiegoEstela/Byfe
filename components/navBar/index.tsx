@@ -1,12 +1,12 @@
 import * as styles from "./index.style";
 import Image from "next/image";
 import Link from "next/link";
-
+import style from "../../styles/navBar.module.css"
 
 export default function NavBar() {
   return (
 
-    <styles.Header>
+    <div className={style.header}>
       <styles.Logo>
         <Image src="/logoByFe.png" alt="byfe" width={80} height={80} />
       </styles.Logo>
@@ -21,6 +21,6 @@ export default function NavBar() {
         </styles.Nav>
         <styles.ClearFix> </styles.ClearFix>
       
-    </styles.Header>
+    </div>
   );
 }
