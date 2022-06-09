@@ -1,12 +1,15 @@
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { RiSendPlane2Line } from "react-icons/ri";
 
-export default function NavBar() {
+export default function NavBar({ Active }: any) {
+  useEffect(() => {
+    Active == false && setActive(false);
+  }, [Active]);
+  
   const [active, setActive] = useState(false);
   return (
-    <div className="header"
-    onClick={() => setActive(!active)}>
+    <div className="header">
       <a className="logo">
         <h2 className="title">Byfe</h2>
       </a>
