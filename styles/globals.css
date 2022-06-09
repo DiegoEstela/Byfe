@@ -7,11 +7,273 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-* {
+.header {
+  position: relative;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #0070f3;
   box-sizing: border-box;
+  box-shadow: inset 0 0 35px 5px rgb(0 0 0 / 41%), inset 0 20px 1px 1px #0070f3,
+    9px 13px 13px -4px rgba(0, 0, 0, 0.44);
+  border-radius: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+nav{
+  float: right;   
+  text-align: center;
+  position: relative;
+  width: 40rem;
+  height: 5rem;
+}
+
+nav a{
+  line-height: 80px;
+  height: 100%;
+  font-size: 16px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+nav .animation{
+  position: absolute;
+  height: 100%;
+  top:0;
+  z-index: 0;
+  transition: all 0.5s ease;
+}
+
+.Logo{
+  height : 70px;
+  padding: 0 30px;
+  line-height: 60px;
+  background: transparent;
+  box-sizing: border-box;
+  text-align: center;
+  float: left;
+  font-weight: 700;
+  }
+
+.title{
+  margin: 0;
+  height: 70px;
+  font-size: 36px;
+  list-style: 60px;
+  padding: 15px 30px;
+  background: transparent;
+  text-align: center;
+  float: left;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.clearFix{
+ clear: both;
+}
+
+
+
+/* ANIMATION */
+
+nav a:nth-child(1){
+  width: 140px;
+}
+
+
+nav a:nth-child(2){
+  width: 140px;
+}
+
+
+nav a:nth-child(3){
+  width: 140px;
+}
+
+
+.nav a:nth-child(4){
+  width: 140px;
+}
+
+nav .start, nav a:nth-child(1):hover~.animation{
+  width: 140px;
+  left: 2.7rem;
+  text-decoration: none;
+  border-radius: 15px;
+  box-shadow: inset 0 0 35px 5px rgb(0 0 0, 0.25), inset 0 20px 1px 1px #0070f3,0 -2px 1px 0 rgba(0,0,0,0.25);
+  background-color: #0070f3;
+  
+
+}
+
+nav a:nth-child(2):hover~.animation{
+  width: 140px;
+  left: 11rem;
+  box-shadow: inset 0 0 35px 5px rgb(0 0 0, 0.25), inset 0 20px 1px 1px #0070f3,0 -2px 1px 0 rgba(0,0,0,0.25);
+  background-color: #0070f3;
+}
+
+nav a:nth-child(3):hover~.animation{
+  width: 140px;
+  left: 20rem;
+  box-shadow: inset 0 0 35px 5px rgb(0 0 0, 0.25), inset 0 20px 1px 1px #0070f3,0 -2px 1px 0 rgba(0,0,0,0.25);
+  background-color: #0070f3;
+}
+
+
+nav a:nth-child(4):hover~.animation{
+  width: 140px;
+  left: 28.5rem;
+  box-shadow: inset 0 0 35px 5px rgb(0 0 0, 0.25), inset 0 20px 1px 1px #0070f3,0 -2px 1px 0 rgba(0,0,0,0.25);
+  background-color: #0070f3;
+}
+
+.menu-toggle{
+  display: none;
+}
+
+.menu-toggle-open{
+  display: none;
+}
+
+.menu-toggle:hover{
+  transform: rotate(90deg);
+  transition: 0.7s;
+}
+
+@media (max-width:900px){
+  .header{
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 2%;
+
+  }
+  nav{
+      display: none;
+  }
+  nav .animation{
+     display: none;
+  }
+  
+  nav.active{ 
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+  }
+  nav.active a{ 
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+}
+
+
+  .menu-toggle{
+     padding: 20px 30px;
+      display: block;
+      float: right;
+      cursor: pointer;
+      font-size: 35px;
+      color: white;
+      transition: 1s;
+  }
+  .menu-toggle-open{
+    padding: 20px 30px;
+     display: block;
+     float: right;
+     cursor: pointer;
+     font-size: 35px;
+     color: white;
+     transform: rotate(90deg);
+ }
+
+
+
+}
+
+@media (max-width:768px){
+  nav.active{ 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+nav.active a{ 
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 60px;
+}
+
+nav.active a:hover{ 
+  background-color: #308af1;
+ 
+}
+
+}
+
+
+@media (max-width:481px){
+  nav.active{ 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+nav.active a{ 
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 50px;
+}
+
+}
+@media (max-width:320px){
+  nav.active{
+    width: 100;
+  }
+  nav.active a{ 
+      font-size: 18px;
+  
+      }
 }
