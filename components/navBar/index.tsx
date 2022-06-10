@@ -1,13 +1,11 @@
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import { RiSendPlane2Line } from "react-icons/ri";
+import { RiSendPlane2Line, RiInstagramFill } from "react-icons/ri";
 
-export default function NavBar({ Active }: any) {
-  useEffect(() => {
-    Active == false && setActive(false);
-  }, [Active]);
-  
-  const [active, setActive] = useState(false);
+export default function NavBar({ Active, setActive }: any) {
+
+
+
+
   return (
     <div className="header">
       <a className="logo">
@@ -15,13 +13,24 @@ export default function NavBar({ Active }: any) {
       </a>
 
       <div
-        className={active ? "menu-toggle-open" : "menu-toggle"}
-        onClick={() => setActive(!active)}
+         className={Active ? "menu-toggle" : "menu-toggle-open" }
+        onClick={() => setActive(!Active)}
+       
       >
         <RiSendPlane2Line />
       </div>
+   
 
-      <nav className={active ? "active" : ""}>
+      <Link href="https://www.instagram.com/byfe.ok"> 
+      <a className="instagram" >
+      <RiInstagramFill/>
+      </a>
+     </Link>
+     
+    
+      
+
+      <nav className={Active ? "" : "active" }>
         <a>
           {" "}
           <Link href="/">HOME </Link>

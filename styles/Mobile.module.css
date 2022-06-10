@@ -1,0 +1,31 @@
+
+.tabBar{
+    display: none;
+}
+
+.mainMobile{
+    display: none;
+}
+
+
+@media (max-width:481px){
+.mainMobile{
+    display: block;
+    height: 80vh;
+    padding: 0;
+    margin: 0;
+}
+
+.tabBar{
+    height: 10vh;
+    background-color: #0070f3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tabBar_Icon{
+    margin-top: 15px;
+   font-size: 50px;
+   color: white;
+}}
