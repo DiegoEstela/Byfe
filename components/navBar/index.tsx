@@ -33,18 +33,18 @@ export default function NavBar({ Active, setActive }: any) {
       <nav className={Active ? "" : "active" }>
         <a>
           {" "}
-          <Link href="/">HOME </Link>
+          <Link href="/home">HOME </Link>
         </a>
         <a>
           {" "}
-          <Link href="/">ABOUT US </Link>
+          <Link href="/aboutUs">ABOUT US </Link>
         </a>
         <a>
           {" "}
-          <Link href="/">SERVICES </Link>
+          <Link href="/services">SERVICES </Link>
         </a>
         <a>
-          <Link href="/">CONTACT US </Link>
+          <Link href="/contactUs">CONTACT US </Link>
         </a>
         <div className="animation start"> </div>
       </nav>
