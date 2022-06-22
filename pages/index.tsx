@@ -12,14 +12,13 @@ import MainMobile from '../components/mainMobile'
 
 const Home: NextPage = () => {
   const [active, setActive] = useState(false);
-  console.log(active)
   return (
   <div>
       <Head>
-        <title>Byfe</title>
+        <title>Byfe | Consultora digital</title>
         <meta name="google-site-verification" content="_3h0DQ916hXdTNP6QyMHOMdG7rsT6PuMNX1xDshYAm0" />
         <meta name="byfe consultora" content="servicios digitales" />
-        <meta name="descripción" content="Consultora de servicios digitales"/>
+        <meta name="descripción" content="Desarrollo web, Diseño grafico, Social media, SEO y mucho mas."/>
         <link rel="icon" href="/logoByFe.png" />
       </Head>
       <NavBar  Active={active} setActive={setActive}/>
@@ -27,20 +26,20 @@ const Home: NextPage = () => {
       <TabBar/>
       <main className={styles.main}  onClick={()=> setActive(true)}>
         <h1 >
-          Welcome to <a href="https://nextjs.org">Byfe</a>
+          Welcome to Byfe
         </h1>
        </main>
      
 
       <footer className={styles.footer}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://by-fe.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by
           <span >
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            Diego Estela
           </span>
         </a>
       </footer>

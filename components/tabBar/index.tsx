@@ -7,22 +7,22 @@ function TabBar() {
     <div className={style.tabBar}> 
     
     <a className={style.tabBar_Icon} >
-    <Link href="components/homeMobile/index.tsx"> 
+    <Link href="/home"> 
       <RiHome4Fill/>
      </Link>
      </a>
      <a className={style.tabBar_Icon} >
-    <Link href="https://www.instagram.com/byfe.ok"> 
+    <Link href="contactUs"> 
       <RiContactsBook2Fill/>
      </Link>
      </a>
      <a className={style.tabBar_Icon} >
-    <Link href="https://www.instagram.com/byfe.ok"> 
+    <Link href="aboutUs"> 
       <RiPagesFill/>
      </Link>
      </a>
      <a className={style.tabBar_Icon} >
-    <Link href="https://www.instagram.com/byfe.ok"> 
+    <Link href="services"> 
       <RiWhatsappFill/>
      </Link>
      </a>

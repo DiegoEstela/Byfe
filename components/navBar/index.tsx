@@ -19,28 +19,19 @@ export default function NavBar({ Active, setActive }: any) {
       >
         <RiSendPlane2Line />
       </div>
-   
-
       <Link href="https://www.instagram.com/byfe.ok"> 
       <a className="instagram" >
       <RiInstagramFill/>
       </a>
      </Link>
-     
-    
-      
-
       <nav className={Active ? "" : "active" }>
         <a>
-          {" "}
           <Link href="/home">HOME </Link>
         </a>
         <a>
-          {" "}
           <Link href="/aboutUs">ABOUT US </Link>
         </a>
         <a>
-          {" "}
           <Link href="/services">SERVICES </Link>
         </a>
         <a>
