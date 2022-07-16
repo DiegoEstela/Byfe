@@ -7,16 +7,16 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Script
         strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-WX483N8GER`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-JTFE210TZD`}
       />
 
-      <Script strategy="lazyOnload" id="232877750">
+      <Script strategy="lazyOnload" id="3841364461">
         {`
       window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-WX483N8GER'); `}
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-JTFE210TZD'); `}
       </Script>
       <Component {...pageProps} />
     </>
