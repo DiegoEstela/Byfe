@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Script from "next/script";
 import { useState } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
+        
         <title>Byfe | Consultora digital</title>
         <meta
           name="google-site-verification"
@@ -24,6 +26,8 @@ const Home: NextPage = () => {
           content="Desarrollo web, Diseño grafico, Social media, SEO y mucho mas."
         />
         <link rel="icon" href="/logoByFe.png" />
+    
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX483N8GER"></script>
       </Head>
       <NavBar Active={active} setActive={setActive} />
       <MainMobile />
